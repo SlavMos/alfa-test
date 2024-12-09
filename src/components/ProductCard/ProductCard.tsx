@@ -30,11 +30,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           <div className={s.favorite}>
             <img
               onClick={() => onLike(product.id)}
-              src={
-                product.liked
-                  ? "/public/img/heart-1.svg"
-                  : "/public/img/heart-0.svg"
-              }
+              src={product.liked ? "/img/heart-1.svg" : "/img/heart-0.svg"}
               alt="Like"
             />
           </div>
